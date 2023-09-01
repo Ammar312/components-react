@@ -4,7 +4,7 @@ import React from "react";
 
 const Post = ({ name, image, date, postText, postImage, totalLikes }) => {
   return (
-    <div className=" p-4">
+    <div className=" p-4 my-4 md:ml-40 lg:ml-60 xl:ml-72">
       <div id="post" className="max-w-[571px] rounded-lg shadow-2xl">
         <div id="postHead" className=" p-4 flex justify-between ">
           <div id="logoandName" className=" flex gap-3 items-center">
@@ -14,7 +14,7 @@ const Post = ({ name, image, date, postText, postImage, totalLikes }) => {
             <div>
               <p className=" font-medium">{name}</p>
               <p className=" text-[#8b8686]">
-                {date} . <i class="bi bi-globe-asia-australia"></i>
+                {date} . <i className="bi bi-globe-asia-australia"></i>
               </p>
             </div>
           </div>
@@ -39,7 +39,7 @@ const Post = ({ name, image, date, postText, postImage, totalLikes }) => {
         >
           <div className=" flex">
             <span className=" w-6 h-6 text-[14px] text-white bg-blue-600  flex justify-center items-center rounded-full">
-              <i class="bi bi-hand-thumbs-up-fill"></i>
+              <i className="bi bi-hand-thumbs-up-fill"></i>
             </span>
             <span className=" w-6 h-6 text-white text-[14px] bg-red-400  flex justify-center items-center rounded-full">
               <i className="bi bi-heart-fill"></i>
@@ -58,7 +58,7 @@ const Post = ({ name, image, date, postText, postImage, totalLikes }) => {
         <div className=" flex justify-between items-center mx-4 py-2 border-t-2 ">
           <div className=" text-slate-500 flex justify-center gap-2 hover:bg-gray-100 flex-grow mr-[2px]">
             <span>
-              <i class="bi bi-hand-thumbs-up"></i>
+              <i className="bi bi-hand-thumbs-up"></i>
             </span>
             Like
           </div>
